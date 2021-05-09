@@ -9,14 +9,16 @@ vector<string> getMazePaths(int sr,int sc, int dr, int dc)
 		res.push_back("");
 		return res;
 	}
-	else if(sr>dr || sc>dc)
-	{
-		vector<string> res;
-		return res;
-	}
+	
 
-	vector<string> path1=getMazePaths(sr,sc+1,dr,dc);
-	vector<string> path2=getMazePaths(sr+1,sc,dr,dc);
+	vector<string> path1;
+	vector<string> path2;
+	if(sc<dc)
+		path1=getMazePaths(sr,sc+1,dr,dc);
+
+	if(sr<dc)
+		path2=getMazePaths(sr+1,sc,dr,dc);
+
 	
 	vector<string> paths;
 

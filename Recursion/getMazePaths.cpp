@@ -9,7 +9,7 @@ vector<string> getMazePaths(int sr,int sc, int dr, int dc)
 		res.push_back("");
 		return res;
 	}
-	
+
 
 	vector<string> path1;
 	vector<string> path2;
@@ -19,7 +19,7 @@ vector<string> getMazePaths(int sr,int sc, int dr, int dc)
 	if(sr<dc)
 		path2=getMazePaths(sr+1,sc,dr,dc);
 
-	
+
 	vector<string> paths;
 
 	for(string path:path1)
@@ -30,7 +30,7 @@ vector<string> getMazePaths(int sr,int sc, int dr, int dc)
 	{
 		paths.push_back("v"+path);
 	}
-	
+
 	return paths;
 
 }
@@ -40,7 +40,7 @@ int main()
 	int row=3;
 	int col=3;
 
-	vector<string> result=getMazePaths(1,1,3,3);
+	vector<string> result=getMazePaths(1,1,row,col);
 	cout<<"[";
 	for(int i=0;i<result.size();i++)
 	{

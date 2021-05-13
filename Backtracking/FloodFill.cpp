@@ -32,10 +32,10 @@ int main()
 	vector<vector<int>> arr(row_size, vector<int>(col_size));
 
 	for (int row_loop = 0; row_loop < row_size; row_loop++)
-    {
+	{
       for (int col_loop = 0; col_loop < col_size; col_loop++)
       {
-      	cin>>arr[row_loop][col_loop];
+      		cin>>arr[row_loop][col_loop];
       }
 	}
 
@@ -47,6 +47,7 @@ int main()
 
 //Sample Input
 //3 3
+//0 0 0
 //1 0 1
 //0 0 0
 

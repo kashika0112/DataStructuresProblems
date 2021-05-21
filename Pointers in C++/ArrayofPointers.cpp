@@ -38,9 +38,11 @@ int main()
 	//Array of character Pointers
 	const char *names[3] = {"Aanya", "Bhavini", "Dariya"};
 	cout<<"Address: "<<names<<endl;
+	cout<<"Address: "<<names+1<<endl;
 	cout<<"Value: "<<*names<<endl;
 	cout<<"Value: "<<*(names + 1)<<endl;
 	cout<<"Value: "<<*names[0]<<endl;
+	cout<<"Value: "<<names[1]<<endl;
 	return 0;
 
 	
